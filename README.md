@@ -55,13 +55,13 @@ See the examples for a logger and a watcher.
 In one console, start the watcher:
 ```bash
   $ node examples/watch.js
-  >>> Watching for logs on winston.log...
+Watching for logs on winston.log...
 ```
 
 In another console, run the logger:
 ```bash
   $ node examples/logger.js
-  >>>info:   Beanstalkd log event!
+info:   Beanstalkd log event!
 info:   [object Object]
 warn:   This is a warning!
 error:  This is an error! code=505, anything=This is metadata
