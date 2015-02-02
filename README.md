@@ -80,6 +80,44 @@ closing...
 closing...
 closing...
 ```
+Return to the watcher console and see the output from processing the log entries:
+```bash
+  $ node examples/watch.js
+Watching for logs on winston.log...
+received log: { id: '113', data: '{"level":"help","text":"  Log number 1"}' }
+processing log entry...
+processed: true { id: '113', data: '{"level":"help","text":"  Log number 1"}' }
+deleted { id: '113', data: '{"level":"help","text":"  Log number 1"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '114', data: '{"level":"help","text":"  Log number 2"}' }
+processing log entry...
+processed: true { id: '114', data: '{"level":"help","text":"  Log number 2"}' }
+deleted { id: '114', data: '{"level":"help","text":"  Log number 2"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '115', data: '{"level":"help","text":"  Log number 3"}' }
+processing log entry...
+processed: true { id: '115', data: '{"level":"help","text":"  Log number 3"}' }
+deleted { id: '115', data: '{"level":"help","text":"  Log number 3"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '116', data: '{"level":"help","text":"  Log number 4"}' }
+processing log entry...
+processed: true { id: '116', data: '{"level":"help","text":"  Log number 4"}' }
+deleted { id: '116', data: '{"level":"help","text":"  Log number 4"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+process callback
+process callback
+process callback
+process callback
+process callback
+process callback
+process callback
+process callback
+process callback
+```
 
 #### Author: Jason McInerney
 
