@@ -1,0 +1,22 @@
+{
+  "name": "winston-beanstalkd",
+  "description": "An Beanstalkd transport for winston",
+  "version": "0.0.1",
+  "author": "Jason McInerney <wwwslinger@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/wwwslinger/winston-beanstalkd.git" 
+  },
+  "keywords": ["logging", "sysadmin", "tools", "winston", "beanstalkd", "queue"],
+  "dependencies": {
+    "nodestalker": "0.1.14",
+    "winston": "0.5.x"
+  },
+  "devDependencies": {
+    "vows": "0.5.x",
+    "colors": "0.5.x"
+  },
+  "main": "./lib/winston-beanstalkd",
+  "scripts": { "test": "vows --spec" },
+  "engines": { "node": ">= 0.4.0" }
+}
