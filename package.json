@@ -13,10 +13,8 @@
     "winston": "0.5.x"
   },
   "devDependencies": {
-    "vows": "0.5.x",
-    "colors": "0.5.x"
   },
   "main": "./lib/winston-beanstalkd",
   "scripts": { "test": "vows --spec" },
-  "engines": { "node": ">= 0.4.0" }
+  "engines": { "node": ">= 0.10.0" }
 }
