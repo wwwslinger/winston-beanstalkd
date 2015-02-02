@@ -97,28 +97,70 @@ Return to the watcher console and see the output from processing the log entries
 ```bash
   $ node examples/watch.js
 Watching for logs on winston.log...
-received log: { id: '113', data: '{"level":"help","text":"  Log number 1"}' }
+received log: { id: '180',
+  data: '{"level":"info","text":"  Beanstalkd log event!"}' }
 processing log entry...
-processed: true { id: '113', data: '{"level":"help","text":"  Log number 1"}' }
-deleted { id: '113', data: '{"level":"help","text":"  Log number 1"}' }
+processed: true { id: '180',
+  data: '{"level":"info","text":"  Beanstalkd log event!"}' }
+deleted { id: '180',
+  data: '{"level":"info","text":"  Beanstalkd log event!"}' }
 [ 'DELETED' ]
 Watching for logs on winston.log...
-received log: { id: '114', data: '{"level":"help","text":"  Log number 2"}' }
+received log: { id: '181',
+  data: '{"level":"info","text":"  [object Object]"}' }
 processing log entry...
-processed: true { id: '114', data: '{"level":"help","text":"  Log number 2"}' }
-deleted { id: '114', data: '{"level":"help","text":"  Log number 2"}' }
+processed: true { id: '181',
+  data: '{"level":"info","text":"  [object Object]"}' }
+deleted { id: '181',
+  data: '{"level":"info","text":"  [object Object]"}' }
 [ 'DELETED' ]
 Watching for logs on winston.log...
-received log: { id: '115', data: '{"level":"help","text":"  Log number 3"}' }
+received log: { id: '182',
+  data: '{"level":"warn","text":"  This is a warning!"}' }
 processing log entry...
-processed: true { id: '115', data: '{"level":"help","text":"  Log number 3"}' }
-deleted { id: '115', data: '{"level":"help","text":"  Log number 3"}' }
+processed: true { id: '182',
+  data: '{"level":"warn","text":"  This is a warning!"}' }
+deleted { id: '182',
+  data: '{"level":"warn","text":"  This is a warning!"}' }
 [ 'DELETED' ]
 Watching for logs on winston.log...
-received log: { id: '116', data: '{"level":"help","text":"  Log number 4"}' }
+received log: { id: '183',
+  data: '{"level":"error","text":" This is an error!","meta":{"code":"505","anything":"This is metadata"}}' }
 processing log entry...
-processed: true { id: '116', data: '{"level":"help","text":"  Log number 4"}' }
-deleted { id: '116', data: '{"level":"help","text":"  Log number 4"}' }
+processed: true { id: '183',
+  data: '{"level":"error","text":" This is an error!","meta":{"code":"505","anything":"This is metadata"}}' }
+deleted { id: '183',
+  data: '{"level":"error","text":" This is an error!","meta":{"code":"505","anything":"This is metadata"}}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '184', data: '{"level":"help","text":"  Log number 0"}' }
+processing log entry...
+processed: true { id: '184', data: '{"level":"help","text":"  Log number 0"}' }
+deleted { id: '184', data: '{"level":"help","text":"  Log number 0"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '185', data: '{"level":"help","text":"  Log number 1"}' }
+processing log entry...
+processed: true { id: '185', data: '{"level":"help","text":"  Log number 1"}' }
+deleted { id: '185', data: '{"level":"help","text":"  Log number 1"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '186', data: '{"level":"help","text":"  Log number 2"}' }
+processing log entry...
+processed: true { id: '186', data: '{"level":"help","text":"  Log number 2"}' }
+deleted { id: '186', data: '{"level":"help","text":"  Log number 2"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '187', data: '{"level":"help","text":"  Log number 3"}' }
+processing log entry...
+processed: true { id: '187', data: '{"level":"help","text":"  Log number 3"}' }
+deleted { id: '187', data: '{"level":"help","text":"  Log number 3"}' }
+[ 'DELETED' ]
+Watching for logs on winston.log...
+received log: { id: '188', data: '{"level":"help","text":"  Log number 4"}' }
+processing log entry...
+processed: true { id: '188', data: '{"level":"help","text":"  Log number 4"}' }
+deleted { id: '188', data: '{"level":"help","text":"  Log number 4"}' }
 [ 'DELETED' ]
 Watching for logs on winston.log...
 process callback
@@ -130,6 +172,7 @@ process callback
 process callback
 process callback
 process callback
+
 ```
 
 #### Author: Jason McInerney
