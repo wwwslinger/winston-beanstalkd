@@ -21,8 +21,6 @@ To enable a log-based work queue compatible with existing logging mechanisms.
 
 The Beanstalkd transport takes the following options. 'host' is required:
 
-* __level:__ Level of messages that this transport should log, defaults to
-'info'.
 * __silent:__ Boolean flag indicating whether to suppress output, defaults to
 false.
 * __host:__ The host running Beanstalkd, defaults to localhost.
