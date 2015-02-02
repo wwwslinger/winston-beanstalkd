@@ -5,16 +5,34 @@
   "author": "Jason McInerney <wwwslinger@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "http://github.com/wwwslinger/winston-beanstalkd.git" 
+    "url": "http://github.com/wwwslinger/winston-beanstalkd.git"
   },
-  "keywords": ["logging", "sysadmin", "tools", "winston", "beanstalkd", "queue"],
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools",
+    "winston",
+    "beanstalkd",
+    "queue"
+  ],
   "dependencies": {
-    "nodestalker": "0.1.14",
-    "winston": "0.5.x"
+    "nodestalker": "0.1.x",
+    "winston": "0.8.x"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "main": "./lib/winston-beanstalkd",
-  "scripts": { "test": "vows --spec" },
-  "engines": { "node": ">= 0.10.0" }
+  "scripts": {
+    "test": "vows --spec"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/wwwslinger/winston-beanstalkd/issues"
+  },
+  "homepage": "https://github.com/wwwslinger/winston-beanstalkd",
+  "directories": {
+    "example": "examples"
+  },
+  "license": "MIT"
 }
