@@ -1,6 +1,8 @@
 # winston-beanstalkd
 A [Beanstalkd][0] transport for [winston][0].
 
+[![NPM version](https://img.shields.io/npm/v/winston-beanstalkd.svg)](https://www.npmjs.org/package/winston-beanstalkd) ![MIT License](http://img.shields.io/badge/license-MIT-green.svg)
+
 ## Motivation
 To enable a log-based work queue compatible with existing logging mechanisms.
 
