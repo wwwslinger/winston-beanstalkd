@@ -1,6 +1,6 @@
 /*
  * Publish any winston logs to a Beanstalkd server
- * First start watch.js and then put.js to see log messages
+ * First start watch.js and then logger.js to see log messages
  *
  * (C) 2015 Jason McInerney
  * MIT LICENCE

@@ -28,11 +28,60 @@ false.
 11300.
 * __tube:__ The name of the tube you want to log to, defaults to 'winston.log'. See [beanstalkd FAQ][2].
 * __delay:__ See the [beanstalkd FAQ][2].
-* __priority:__ [beanstalkd FAQ][2].
-* __ttr:__ [beanstalkd FAQ][2].
+* __priority:__ See the [beanstalkd FAQ][2].
+* __ttr:__ See the [beanstalkd FAQ][2].
 * __levelFilter:__ Whether to append the logging level to the tube name to filter on log level.
 * __transformMessage:__ A custom function for transforming logged objects to a queue string, defaults to JSON.stringify().
 
+## Installation
+
+### Installing npm (node package manager)
+
+``` bash
+  $ curl http://npmjs.org/install.sh | sh
+```
+
+### Installing winston-beanstalkd
+
+``` bash
+  $ npm install winston
+  $ npm install winston-beanstalkd
+```
+
+## Usage
+
+See the examples for a logger and a watcher.
+
+In one console, start the watcher:
+```bash
+  $ node examples/watch.js
+  >>> Watching for logs on winston.log...
+```
+
+In another console, run the logger:
+```bash
+  $ node examples/logger.js
+  >>>info:   Beanstalkd log event!
+info:   [object Object]
+warn:   This is a warning!
+error:  This is an error! code=505, anything=This is metadata
+help:   Log number 0
+help:   Log number 1
+help:   Log number 2
+help:   Log number 3
+help:   Log number 4
+closing...
+closing...
+closing...
+closing...
+closing...
+closing...
+closing...
+closing...
+closing...
+```
+
+#### Author: Jason McInerney
 
 [0]: https://github.com/kr/beanstalkd
 [1]: https://github.com/flatiron/winston
