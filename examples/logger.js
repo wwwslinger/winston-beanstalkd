@@ -8,7 +8,7 @@
  */
 
 var winston = require('winston'),
-    Beanstalkd = require('../lib/winston-beanstalkd').Beanstalkd;
+    Beanstalkd = require('winston-beanstalkd').Beanstalkd;
 
 winston.cli();
 
