@@ -22,7 +22,6 @@ var options = {
 winston.add(Beanstalkd, options);
 
 winston.log('info', 'Beanstalkd log event!');
-winston.log('info', { "data": "You can log objects" });
 winston.log('warn', 'This is a warning!');
 winston.log('error', 'This is an error!', { code: '505', anything: 'This is metadata'});
 
